@@ -10,129 +10,130 @@
 </head>
 
 <body>
-    <header class="web-header">
+    <div class="container">
+        <header class="web-header">
 
-        <div>
-            <img src="./img/logo.png" alt="logotipo">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke=" #2AB514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-user-check">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="8.5" cy="7" r="4"></circle>
-                    <polyline points="17 11 19 13 23 9"></polyline>
-                </svg>
-                <p class="username">Nome do usuário</p>
+                <img src="./img/logo.png" alt="logotipo">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke=" #2AB514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-user-check">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <polyline points="17 11 19 13 23 9"></polyline>
+                    </svg>
+                    <p class="username">Nome do usuário</p>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <div class="help-find">
-                <p>Ajude-nos a encontrar</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="#023859" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-chevron-right">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </div>
-            <input type="submit" value="Login" class="login-button">
-        </div>
-
-    </header>
-
-    <nav>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#023859"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-            <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
-        <p class="return">Voltar</p>
-    </nav>
-
-    <section class="box">
-        <div class="missing-person-name">
-            <h1>Fulano da Silva</h1>
-        </div>
-        <div class="missing-since">
-            <p>Desaparecido desde 12/10/2022</p>
-        </div>
-
-        <div>
-            <img class="picture" src="./img/desaparecido.png" alt="Imagem do desaparecido">
-        </div>
-
-        <div id="info">
-            <h4>Idade:</h4>
-            <h4 id="infoAnswer">30 anos</h4>
-
-            <h4>Peso:</h4>
-            <h4 id="infoAnswer">73kg</h4>
-
-            <h4>Altura:</h4>
-            <h4 id="infoAnswer">1,77m</h4>
-
-            <h4>Cor dos olhos:</h4>
-            <h4 id="infoAnswer">Preto</h4>
-
-            <h4>Tipo de cabelo:</h4>
-            <h4 id="infoAnswer">Crespo</h4>
-
-            <h4>Cor do cabelo</h4>
-            <h4 id="infoAnswer">Castanho claro</h4>
-
-            <h4>Etnia</h4>
-            <h4 id="infoAnswer">Branco</h4>
-
-            <h4>Estado</h4>
-            <h4 id="infoAnswer">SP</h4>
-
-            <h4>Cidade</h4>
-            <h4 id="infoAnswer">São Paulo</h4>
-        </div>
-
-        <div>
-            <h4>Roupa que usava no dia do desaparecimento: </h4>
-            <h4 id="infoAnswer">Camisa branca, calça social preta, sapato social preto.</h4>
-
-            <h4 id="info">Doenças?</h4>
-            <h4 id="infoAnswer">Hipertensão</h4>
-
-            <h4 id="info">Tatuagens</h4>
-            <h4 id="infoAnswer">Não</h4>
-
-            <h4 id="info">Piercings</h4>
-            <h4 id="infoAnswer">Não</h4>
-
-            <h4 id="info">Observações</h4>
-            <h4 id="infoAnswer">Estava a caminho de uma entrevista de emprego na região da Liberdade, não chegou na
-                entrevista e foi visto pela ultima vez saindo da estação do metrô.</h4>
-        </div>
-
-        <aside>
-
-            <div class="red">
-                <h2>SEGUINDO AS INDICAÇÕES DA POLÍCIA CIVIL, NÃO DIVULGAMOS NOMES OU DADOS PESSOAIS DOS FAMILIARES. PARA
-                    PASSAR INFORMAÇÕES SOBRE QUALQUER PESSOA, VOCÊ PODE LIGAR 190 OU 181 PARA UM REPORTE ANÔNIMO.</h2>
-
-                <button class="fale-conosco">
-                    <a href="mailto:mailto=contato@desaparecidos.com">
-                        <p>Fale Conosco</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="#023859" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-chevron-right">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
+            <div>
+                <div class="help-find">
+                    <a href="#">
+                        <h3>Ajude-nos a encontrar ></h3>
                     </a>
-                </button>
+                </div>
+                <input type="submit" value="Login" class="login-button">
             </div>
-        </aside>
-    </section>
 
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.1050672285764!2d-46.6400397684341!3d-23.555056567045433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a93c733cab%3A0xdc3dc3735747495!2zRXN0YcOnw6NvIEphcMOjby1MaWJlcmRhZGU!5e0!3m2!1spt-BR!2sbr!4v1666496987180!5m2!1spt-BR!2sbr"
-            width="1245" height="451" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        </header>
+
+        <nav>
+            <p class="return"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 24" fill="none" stroke="#023859"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>Voltar</p>
+        </nav>
+
+        <section class="box">
+            <div class="missing-person-name">
+                <h1>Fulano da Silva</h1>
+            </div>
+            <div class="missing-since">
+                <p>Desaparecido desde 12/10/2022</p>
+            </div>
+            
+            <aside class="left">
+                <div>
+                    <img class="picture" src="./img/desaparecido.png" alt="Imagem do desaparecido">
+                </div>
+    
+                <div id="info">
+                    <h4>Idade:</h4>
+                    <h4 id="infoAnswer">30 anos</h4>
+    
+                    <h4>Peso:</h4>
+                    <h4 id="infoAnswer">73kg</h4>
+    
+                    <h4>Altura:</h4>
+                    <h4 id="infoAnswer">1,77m</h4>
+    
+                    <h4>Cor dos olhos:</h4>
+                    <h4 id="infoAnswer">Preto</h4>
+    
+                    <h4>Tipo de cabelo:</h4>
+                    <h4 id="infoAnswer">Crespo</h4>
+    
+                    <h4>Cor do cabelo</h4>
+                    <h4 id="infoAnswer">Castanho claro</h4>
+    
+                    <h4>Etnia</h4>
+                    <h4 id="infoAnswer">Branco</h4>
+    
+                    <h4>Estado</h4>
+                    <h4 id="infoAnswer">SP</h4>
+    
+                    <h4>Cidade</h4>
+                    <h4 id="infoAnswer">São Paulo</h4>
+                </div>
+    
+                <div>
+                    <h4>Roupa que usava no dia do desaparecimento: </h4>
+                    <h4 id="infoAnswer">Camisa branca, calça social preta, sapato social preto.</h4>
+    
+                    <h4 id="info">Doenças?</h4>
+                    <h4 id="infoAnswer">Hipertensão</h4>
+    
+                    <h4 id="info">Tatuagens</h4>
+                    <h4 id="infoAnswer">Não</h4>
+    
+                    <h4 id="info">Piercings</h4>
+                    <h4 id="infoAnswer">Não</h4>
+    
+                    <h4 id="info">Observações</h4>
+                    <h4 id="infoAnswer">Estava a caminho de uma entrevista de emprego na região da Liberdade, não chegou na
+                        entrevista e foi visto pela ultima vez saindo da estação do metrô.</h4>
+                </div>
+    
+            </aside>
+            
+            <aside class="right">
+
+                <div class="red">
+                    <h2>SEGUINDO AS INDICAÇÕES DA POLÍCIA CIVIL, NÃO DIVULGAMOS NOMES OU DADOS PESSOAIS DOS FAMILIARES. PARA
+                        PASSAR INFORMAÇÕES SOBRE QUALQUER PESSOA, VOCÊ PODE LIGAR 190 OU 181 PARA UM REPORTE ANÔNIMO.</h2>
+
+                    <button class="fale-conosco">
+                        <a href="mailto:mailto=contato@desaparecidos.com">
+                            <p>Fale Conosco</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="#023859" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-chevron-right">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+            </aside>
+        </section>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.1050672285764!2d-46.6400397684341!3d-23.555056567045433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a93c733cab%3A0xdc3dc3735747495!2zRXN0YcOnw6NvIEphcMOjby1MaWJlcmRhZGU!5e0!3m2!1spt-BR!2sbr!4v1666496987180!5m2!1spt-BR!2sbr"
+                width="1245" height="451" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </div>
 </body>
 

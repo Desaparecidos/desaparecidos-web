@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300;600&family=Roboto:wght@300;400;500;700&display=swap');
 
+.container{
+    padding: 20px;
+}
+
 .web-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.web-header svg{
+    margin-right: 10px;
+}
+
+header div div{
+    display: flex;
+}
+
 .username{
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #023859;
@@ -18,6 +32,21 @@
     display: inline-flex;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    
+}
+
+.help-find a{
+    display: inline-flex;
+    text-decoration: none;
+    color: #023859;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.help-find h3{
+    padding: 6px 3px 0 5px;
+    height: 40px;
+    width: 250px;
 }
 
 .login-button{
@@ -45,7 +74,14 @@
     display: inline-flex;
 }
 
+nav{
+    padding-top: 50px;
+}
 /* INFORMAÇÕES DO DESAPARECIDO */
+
+aside{
+    display: inline-flex;
+}
 
 .box{
     border: rgba(0,0,0,0.9);

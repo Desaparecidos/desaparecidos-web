@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header class="webHeader">
+
+        <div>
+            <img src="./img/logo.png" alt="logotipo">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke=" #2AB514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-user-check">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <polyline points="17 11 19 13 23 9"></polyline>
+                </svg>
+                <p><strong>Nome do usuário</strong></p>
+            </div>
+        </div>
+
+        <div>
+            <button>
+                <p>Ajude-nos a encontrar</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#023859" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            <button>
+                <p>Login</p>
+            </button>
+        </div>
+
+    </header>
+
+    <section>
+
+        <h3>Registrar conta</h3>
+        <hr>
+
+        <form action="">
+
+            <p>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="password">Senha</label>
+                <input type='password' name='password' required>
+            </p>
+
+            <p>
+                <label for="phone">Nome:</label>
+                <input type="tel" name="phone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+                    placeholder="11 99999-9999">
+            </p>
+
+            <p>
+                <input type="submit" value="Cadastre-se">
+            </p>
+
+            <p class="link">
+                <a href="#">Ou faça login</a>
+            </p>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>
