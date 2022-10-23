@@ -84,3 +84,42 @@ input, select{
     background-color: #EDEDE9;
     height: 35px;
 }
+
+/*Área do botáo para selecionar imagem*/
+
+.archives{
+    padding: 20px 0;
+}
+.archives label{
+    display: inline-flex;
+    padding-left: 60px;
+}
+
+/* Área das peças de roupas*/
+
+.obs{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.obs label{
+    padding-right: 20px;
+}
+
+/* Área do botão de registrar*/
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+    color: #F2F1DC;
+    font-size: 32px;
+    text-align: center;
+    background-color: #023859;
+    width: 211px;
+    height: 50px;
+    border-radius: 12px;
+}
