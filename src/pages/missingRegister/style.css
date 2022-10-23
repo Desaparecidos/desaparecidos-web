@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.container{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div div{
+    display: flex;
+}
+
+.face svg{
+    margin-right: 10px;
+}
+
+.help div{
+    display: inline-flex;
+}
+
+.help div a{
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/* FIM DO HEADER*/
+
+/*INICIO DO CONTEUDO*/
+
+.content{
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.content h2{
+    text-align: center;
+    padding-bottom: 20px ;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form p{
+    padding: 4px 0;
+}
+
+.formCenter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.formCenter p{
+    padding-bottom: 10px;
+}
+
+.left p label{
+    padding: 0px 10px;
+}
+
+.right p{
+    display: flex;
+    justify-content: end;
+}
+
+.form .right p{
+    padding: 8px 0;
+}
+
+.right p label{
+    padding: 0px 15px;
+}
+
+input, select{
+    border-radius: 8px;
+    background-color: #EDEDE9;
+    height: 35px;
+}
