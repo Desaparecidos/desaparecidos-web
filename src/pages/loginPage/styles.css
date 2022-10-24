@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div div {
+    display: flex;
+}
+
+.help div {
+    display: inline-flex;
+}
+
+.helping-find h3 {
+    background-color: rgba(204, 16, 41, 0.1);
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 700;
+    padding: 6px 3px 0 5px;
+    height: 40px;
+    width: 250px;
+}
+
+.help div a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #023859;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* CONFIGURAÇÃO LOGIN */
+
+section {
+    background-color: #023859;
+    width: 50%;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+hr {
+    width: 50%;
+    background-color: #FFFFFF;
+}
+
+label{
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+
+
+input{
+    border-radius: 8px;
+    background-color: #EDEDE9;
+    height: 20px;
+    border: none;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.checkbox{
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.checkbox:hover{
+    background-color: #EDEDE9;
+}
+
+.checkbox input:checked ~ .checkmark{
+    background-color: #29cc10;
+}
+
+.checkbox .checkmark:after{
+    content: "";
+    display: none;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox input:checked ~ .checkmark:after{
+    display: block;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    transition: 0.3ms;
+}
+
+a:hover{
+    color: rgba(204, 16, 41, 0.8);
+}
+
+.button{
+    color: #023859;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 90px;
+    height: 34px;
+    border-radius: 12px;
+    border: none;
+}
