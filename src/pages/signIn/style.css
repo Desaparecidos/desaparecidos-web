@@ -1,0 +1,99 @@
+header {
+    padding-top: 10px;
+    padding-left: 34px;
+    padding-right: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help {
+    display: flex;
+    justify-content: space-between;
+}
+
+header strong {
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 12px;
+    color: #023859;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formLogin {
+    width: 911px;
+    height: 597px;
+    background-color: #023859;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 71px;
+    border-bottom: 1px solid #fff;
+}
+
+.loginTitle p {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+label {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 35px;
+}
+
+input {
+    width: 350px;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+}
+
+button {
+    width: 184px;
+    height: 44.55px;
+    color: #023859;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
