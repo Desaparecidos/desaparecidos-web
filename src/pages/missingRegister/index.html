@@ -9,13 +9,14 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="responsivo.css">
 </head>
 
 <body>
-    <div class="container"> 
+    <div class="container">
         <header>
             <div>
-                <img src="img/logo.png" alt="logo" width="350px" height="40px">
+                <img src="/src/imgs/logo.png" alt="logo" class="logo">
                 <div class="face">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke=" #2AB514" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -27,8 +28,8 @@
 
                     <h4>Nome da Pessoa</h4>
                 </div>
-
             </div>
+            <br>
             <div class="help">
                 <div class="helping-find">
                     <a href="#">
@@ -43,87 +44,89 @@
             <h2>Registrar um desaparecido</h2>
             <div>
                 <div class="form">
-                    <form style="width: 50%;" class="left">
+                    <form class="left">
                         <p>
-                            <label for="nameMissing">Nome: </label>
-                            <input type="text" id="nameMissing" name="nameMissing" style="width: 85%;">
+                            <label for="nameMissing">Nome:</label>
+                            <input type="text" id="nameMissing" name="nameMissing">
                         </p>
-
                         <p>
                             <label for="birth">Nascimento: </label>
-                            <input type="date" id="birth" name="birth" style="width: 50%;">
+                            <input type="date" id="birth" name="birth">
                         </p>
 
                         <p>
                             <label for="weight">Peso: </label>
-                            <input type="text" id="weight" name="weight" style="width: 40%;">
+                            <input type="text" id="weight" name="weight">
                         </p>
 
                         <p>
                             <label for="illnesses">Doenças: </label>
-                            <input type="text" id="illnesses" name="illnesses" style="width: 52%;">
+                            <input type="text" id="illnesses" name="illnesses">
                         </p>
 
                         <p>
                             <label for="tattoo">Tatuagens: </label>
-                            <input type="text" id="tattoo" name="tattoo" style="width: 50%;">
+                            <input type="text" id="tattoo" name="tattoo">
                         </p>
 
                         <p>
                             <label for="gender">Sexo: </label>
-                            <input type="text" id="gender" name="gender" style="width: 50%;">
+                            <select id="gender" name="gender">
+                                <option selected="" value="">None</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                            </select>
                         </p>
                     </form>
-                    <form style="width: 60%;" class="right">
+                    <form class="right">
                         <p>
                             <label for="BO">Boletim de ocorrência: </label>
-                            <input type="text" id="BO" name="BO" style="width: 65%;">
+                            <input type="text" id="BO" name="BO">
                         </p>
 
                         <p>
                             <label for="eyesColor">Cor dos olhos: </label>
-                            <input type="text" id="eyesColor" name="eyesColor" style="width: 65%;">
+                            <input type="text" id="eyesColor" name="eyesColor">
                         </p>
 
                         <p>
                             <label for="hairType">Tipo de Cabelo: </label>
-                            <input type="text" id="hairType" name="hairType" style="width: 65%;">
+                            <input type="text" id="hairType" name="hairType">
                         </p>
 
                         <p>
                             <label for="hairColor">Doenças: </label>
-                            <input type="text" id="hairColor" name="hairColor" style="width: 65%;">
+                            <input type="text" id="hairColor" name="hairColor">
                         </p>
 
                         <p>
                             <label for="race">Etnia: </label>
-                            <input type="text" id="race" name="race" style="width: 65%;">
+                            <input type="text" id="race" name="race">
                         </p>
                     </form>
                 </div>
             </div>
             <div class="formCenter">
-                <form style="width: 50%;" class="left">
+                <form class="left">
                     <p>
                         <label for="dateOfMissing">Data do desaparecimento: </label>
-                        <input type="date" id="dateOfMissing" name="dateOfMissing" style="width: 40%;">
-                    </p>
-
-                    <p>
-                        <label for="place">Local estimado: </label>
-                        <input type="text" id="place" name="place" style="width: 70%;">
+                        <input type="date" id="dateOfMissing" name="dateOfMissing">
                     </p>
                 </form>
-                <form style="width: 60%;" class="right">
+                <form class="right">
                     <p>
                         <label for="time">Horário aproximado: </label>
-                        <input type="time" id="time" name="time" style="width: 65%;">
+                        <input type="time" id="time" name="time">
                     </p>
+                </form>
+            </div>
 
-                    <p>
+            <form class="region">
+                <div class="CEP">
+                    <div class="state">
                         <label for="state">Estado: </label>
-                        <select id="state" name="state" style="width: 33%;">
-                            <option selected="" value="">Selecione o Estado (UF)</option>
+                        <select id="state" name="state">
+                            <option selected="" value="">Estado (UF)</option>
                             <option value="Acre">Acre</option>
                             <option value="Alagoas">Alagoas</option>
                             <option value="Amapá">Amapá</option>
@@ -152,23 +155,33 @@
                             <option value="Sergipe">Sergipe</option>
                             <option value="Tocantins">Tocantins</option>
                         </select>
+                    </div>
+                    <div class="city">
                         <label for="city">Cidade: </label>
-                        <input type="text" id="city" name="city" style="width: 33%;">
+                        <input type="text" id="city" name="city">
+                    </div>
+                </div>
+                <div class="address">
+                    <p>
+                        <label for="place">Local estimado: </label>
+                        <br>
+                        <input type="text" id="place" name="place">
                     </p>
-                </form>
-            </div>
-
+                </div>
+            </form>
             <div class="archives">
-                <label for="files">Imagem principal</label><br>
+                <p>Imagem Principal</p>
+                <br>
+                <label for="files">Escolher</label>
                 <input type="file" id="files" name="files">
             </div>
-            <div class="obs">
-                <label for="clothes">Roupas do dia do desaparecimento: </label><br>
-                <input type="text" id="clothes" name="clothes" style="width: 1000px; height: 88px;">
+            <div class="clothes">
+                <label for="clothes">Roupas do dia do<br>desaparecimento: </label>
+                <input type="text" id="clothes" name="clothes">
             </div>
-            <div class="obs">
-                <label for="comments">Observações: </label><br>
-                <input type="text" id="comments" name="comments" style="width: 1000px; height: 151px;">
+            <div class="comments">
+                <label for="comments">Observações: </label>
+                <input type="text" id="comments" name="comments">
             </div>
             <div class="button">
                 <button>Registrar</button>

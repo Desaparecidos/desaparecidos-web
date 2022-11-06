@@ -1,92 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300;600&family=Roboto:wght@300;400;500;700&display=swap');
-
 header {
+    padding-top: 10px;
+    padding-left: 34px;
+    padding-right: 34px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-header div div {
+.help {
     display: flex;
-}
-
-.help div {
-    display: inline-flex;
-}
-
-.helping-find h3 {
-    background-color: rgba(204, 16, 41, 0.1);
+    justify-content: space-between;
+    height: 53px;
+    width: 334px;
+    background-color: rgba(204, 16, 41, 0.2);
     border-radius: 10px 10px 0px 0px;
-    font-weight: 700;
-    padding: 6px 3px 0 5px;
-    height: 40px;
-    width: 250px;
+    display: inline-flex;
 }
 
-.help div a {
-    display: inline-flex;
-    text-decoration: none;
+header strong {
+    font-size: 26px;
+    font-weight: bold;
     color: #023859;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.vector{
+    height: 45px;
+    width: 15px;
+    margin-right: 20px;
+    margin-top: 5px;
 }
 
 .login-button{
     background-color: #023859;
-    color: #FFFFFF;
+    border: none;
+    color: #fff;
+    height: 45px;
+    width: 90px;
     border-radius: 10px;
-    width: 70px;
-    height: 30px;
-    border:none;
-    margin: 10px 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-/* CONFIGURAÇÃO FORGOT PASSWORD */
+main {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-section {
+.formLogin {
+    width: 911px;
+    height: 397px;
     background-color: #023859;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h4 {
-    font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
+.loginTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 71px;
+    border-bottom: 1px solid #fff;
+}
+
+.loginTitle p {
+    color: #fff;
+    font-size: 40px;
     font-weight: 500;
 }
 
-hr {
-    width: 50%;
-    background-color: #FFFFFF;
+form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-label{
-    font-family: 'Inter', sans-serif;
-    color: #FFFFFF;
+.inputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
-
-input{
-    border-radius: 8px;
-    background-color: #EDEDE9;
-    height: 20px;
-    border: none;
+label {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 35px;
 }
 
-p{
-    font-family: 'Inter', sans-serif;
-    color: #FFFFFF;
-    font-size: 13px;
-}
-
-.button{
-    color: #023859;
-    font-size: 13px;
-    text-align: center;
-    background-color: #FFFFFF;
-    width: 150px;
-    height: 30px;
+input {
+    width: 350px;
+    height: 45px;
     border-radius: 12px;
     border: none;
+}
+
+.new-password {
+    width: 164px;
+    height:75px;
+    color: #023859;
+    background-color: #EDEDE9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #fff;
+    text-decoration: none;
 }

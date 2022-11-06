@@ -3,8 +3,18 @@
 
 
 .container{
-    padding: 20px;
+    padding: 40px 40px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+input[type=text] {
+    padding: 10px;
+}
+
+.logo{
+    width: 350px;
+    height: 40px;
 }
 
 /* HEADER*/
@@ -28,35 +38,37 @@ h4{
     font-weight: 500;
 }
 
-.help div{
+.help{
     display: inline-flex;
+    gap: 10px;
 }
 
 .helping-find h3{
+    display: flex;
     background-color: rgba(204,16,41,0.1);
     border-radius: 10px 10px 0px 0px;
     font-weight: 700;
-    padding: 6px 3px 0 5px;
     height: 40px;
     width: 250px;
+    justify-content: center;
+    align-items: center;
 }
 
 .help div a{
-    display: inline-flex;
     text-decoration: none;
     color: #023859;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    height: 0;
 }
 
 .logout{
     background-color: #023859;
     color: #FFFFFF;
     border-radius: 10px;
-    width: 70px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     border:none;
-    margin: 10px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: 700;
@@ -71,9 +83,50 @@ h4{
     width: 100%;
 }
 
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
+
+#nameMissing{
+    width: 85%;
+}
+
+#birth{
+    width: 50%;
+}
+
+#weight, #dateOfMissing{
+    width: 40%;
+}
+
+#illnesses{
+    width: 52%;
+}
+
+#tattoo, #gender{
+    width: 50%;
+}
+
+.right input{
+    width: 65%;
+}
+
+#state, #city{
+    width: 65%;
+}
+
+#place{
+    width: 50%;
+}
+
+
 .content h2{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     color: #023859;
 }
 
@@ -95,20 +148,17 @@ label{
 .formCenter{
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .formCenter p{
     padding-bottom: 10px;
 }
 
-.left p label{
-    padding: 0px 10px;
-}
-
 .right p{
     display: flex;
     justify-content: end;
+    align-items: center;
 }
 
 .form .right p{
@@ -126,26 +176,86 @@ input, select{
     border: none;
 }
 
+.region{
+    padding-top: 20px;
+    width: 100%;
+}
+
+.CEP{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.state{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+
+.city{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.address{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.address input{
+    margin: 10px 0 20px 0;
+}
+
 /*Área do botáo para selecionar imagem*/
 
 .archives{
-    padding: 20px 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
-.archives label{
-    display: inline-flex;
-    padding-left: 60px;
+
+input[type="file"] {
+    display: none;
+}
+
+.archives label {
+    background-color: #023859;
+    padding: 10px 10px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border:none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 /* Área das peças de roupas*/
 
-.obs{
+.clothes{
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding-top: 40px;
 }
 
-.obs label{
+.comments{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.clothes label, .comments label{
     padding-right: 20px;
+}
+
+#clothes, #comments{
+    width: 80%;
+    height: 88px;
 }
 
 /* Área do botão de registrar*/
@@ -153,6 +263,7 @@ input, select{
 .button{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .button button{

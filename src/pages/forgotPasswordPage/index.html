@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desaparecidos</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
+   <link rel="stylesheet" href="/desaparecidos-web/src/pages/forgotPasswordPage/styles.css">
 
-<body>
-
+   <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
     <header>
-        <div>
-            <img src="img/logo.png" alt="logo" width="350px" height="40px">
-        </div>
-        <div class="help">
-            <div class="helping-find">
-                <a href="#">
-                    <h3>Ajude-nos a encontrar></h3>
-                </a>
-                <input type="submit" value="Login" class="login-button">
-            </div>
-        </div>
+      <div class="title">
+        <img src="../../imgs/logo.png" alt="Desaparecidos" />
+      </div>
+
+      <div class="help">
+        <strong>Ajude-nos a encontrar</strong>
+        <img
+          class="vector"
+          src="../../imgs/Vector.svg"
+          alt="seta para esquerda"
+        />
+      </div>
+      <button class="login-button">Login</button>
     </header>
 
-    <section>
+    <main>
+      <div class="formLogin">
+        <div class="loginTitle">
+          <p>Esqueci a senha</p>
+        </div>
 
-        <h4>Esqueci a senha</h4>
-        <hr>
+        <form>
+          <div class="inputContainer">
+            <label for="email">E-mail</label>
+            <input id="E-mail" type="email" />
+          </div>
 
-        <form action="">
+          <button class="new-password">Enviar nova senha</button>
+         
+          <p>Enviaremos sua nova senha por e-mail!</p>
 
-            <p>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" required>
-            </p>
-
-            <p>
-                <input type="submit" value="Enviar nova senha" class="button">
-            </p>
-
-            <p class="confirmation">
-                Enviaremos a sua nova senha por e-mail!
-            </p>
-
+          
         </form>
-
-    </section>
-
-</body>
-
+      </div>
+    </main>
+  </body>
 </html>
