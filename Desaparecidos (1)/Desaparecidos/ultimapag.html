@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimapag</title>
+    <link rel="stylesheet" type="text/css" href="ultimapag.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-logo-go-out">
+        <img src="img\Logo.png" alt="Logo">
+        <div class="button-go-out">
+            <a class="header_go-out">Sair</a>
+        </div>
+        </div>
+        <div class="user">
+            <img src="img\user.png" alt="User">
+            <a class="header-user-name">Raquel Anicio dos Santos</a>
+        </div>
+    </header>
+
+    <home class="home-td">
+        <div class="home">
+        <div class="box-text">
+            <p class="box-text-black">Pesquise as pessoas <br> desaparecidas no momento</p>
+        </div>
+        <img src="img\home-two.png" alt="" width="100%">
+
+        <div class="container-search">
+            <div>
+                <a class="search-title">Pesquisar e filtrar</a>
+            </div>
+            <div class="home-filters">
+                <form action=" " method="post">
+                    <div>
+                    <input class ="input-search" type="search" id="busca" name="q" placeholder="Buscar por uma pessoa">
+                    <button class="search-submit"><img src="img\search.png" alt=""></button>
+                    </div>
+                    <select class = "select-state"name="estado" id="uf"> 
+                    <option value="0">Estado</option>
+                    <option value="1">Acre</option>
+                    <option value="2">Alagoas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Amazonas</option>
+                    <option value="5">Bahia</option>
+                    <option value="6">Ceará</option>
+                    <option value="7">Distrito Federal</option>
+                    <option value="8">Espírito Santo</option>
+                    <option value="9">Goiás</option>
+                    <option value="10">Maranhão</option>
+                    <option value="11">Mato Grosso</option>
+                    <option value="12">Mato Grosso do Sul</option>
+                    <option value="13">Minas Gerais</option>
+                    <option value="14">Pará</option>
+                    <option value="15">Paraíba</option>
+                    <option value="16">Paraná</option>
+                    <option value="17">Pernambuco</option>
+                    <option value="18">Piauí</option>
+                    <option value="19">Rio de Janeiro</option>
+                    <option value="20">Rio Grande do Norte</option>
+                    <option value="21">Rio Grande do Sul</option>
+                    <option value="22">Rondônia</option>
+                    <option value="23">Roraima</option>
+                    <option value="24">Santa Catarina</option>
+                    <option value="25">São Paulo</option>
+                    <option value="26">Sergipe</option>
+                    <option value="27">Tocantins</option>
+                    </select>
+                    <select class= "select-sex" name="sexo" id="sexo">
+                    <option value="1">Sexo</option>
+                    <option value="2">Feminino</option>
+                    <option value="3">Masculino</option>
+                    </select>
+                    <select class="select-years" name="Idade" id="Idade">
+                        <option value="1">Idade</option>
+                        <option value="1">1 ano</option>
+                        <option value="2">2 anos</option>
+                        <option value="3">3 anos</option>
+                        <option value="4">4 anos</option>
+                        <option value="5">5 anos</option>
+                        <option value="6">6 anos</option>
+                        <option value="7">7 anos</option>
+                        <option value="8">8 anos</option>
+                        <option value="9">9 anos</option>
+                        <option value="10">10 anos</option>
+                        <option value="11">11 anos</option>
+                        <option value="12">12 anos</option>
+                        <option value="13">13 anos</option>
+                        <option value="14">14 anos</option>
+                        <option value="15">15 anos</option>
+                        <option value="16">16 anos</option>
+                        <option value="17">17 anos</option>
+                        <option value="18">18 anos</option>
+                        <option value="19">19 anos</option>
+                        <option value="20">20 anos</option>
+                        <option value="21">21 anos</option>
+                        <option value="22">22 anos</option>
+                        <option value="23">23 anos</option>
+                        <option value="24">24 anos</option>
+                        <option value="25">25 anos</option>
+                        <option value="26">26 anos</option>
+                        <option value="27">27 anos</option>
+                        <option value="28">28 anos</option>
+                        <option value="29">29 anos</option>
+                        <option value="30">30 anos</option>
+                        <option value="31">31 anos</option>
+                        <option value="32">32 anos</option>
+                        <option value="33">33 anos</option>
+                        <option value="34">34 anos</option>
+                        <option value="35">35 anos</option>
+                        <option value="36">36 anos</option>
+                        <option value="37">37 anos</option>
+                        <option value="38">38 anos</option>
+                        <option value="39">39 anos</option>
+                        <option value="40">40 anos</option>
+                        <option value="41">41 anos</option>
+                        <option value="42">42 anos</option>
+                        <option value="43">43 anos</option>
+                        <option value="44">44 anos</option>
+                        <option value="45">45 anos</option>
+                        <option value="46">46 anos</option>
+                        <option value="47">47 anos</option>
+                        <option value="48">48 anos</option>
+                        <option value="49">49 anos</option>
+                        <option value="50">50 anos</option>
+                        <option value="51">51 anos</option>
+                        <option value="52">52 anos</option>
+                        <option value="53">53 anos</option>
+                        <option value="54">54 anos</option>
+                        <option value="55">55 anos</option>
+                        <option value="56">56 anos</option>
+                        <option value="57">57 anos</option>
+                        <option value="58">58 anos</option>
+                        <option value="59">59 anos</option>
+                        <option value="60">60 anos</option>
+                        <option value="61">61 anos</option>
+                        <option value="62">62 anos</option>
+                        <option value="63">63 anos</option>
+                        <option value="64">64 anos</option>
+                        <option value="65">65 anos</option>
+                        <option value="66">66 anos</option>
+                        <option value="67">67 anos</option>
+                        <option value="68">68 anos</option>
+                        <option value="69">69 anos</option>
+                        <option value="70">70 anos</option>
+                        <option value="71">71 anos</option>
+                        <option value="72">72 anos</option>
+                        <option value="73">73 anos</option>
+                        <option value="74">74 anos</option>
+                        <option value="75">75 anos</option>
+                        <option value="76">76 anos</option>
+                        <option value="77">77 anos</option>
+                        <option value="78">78 anos</option>
+                        <option value="79">79 anos</option>
+                        <option value="80">80 anos</option>
+                        <option value="81">81 anos</option>
+                        <option value="82">82 anos</option>
+                        <option value="83">83 anos</option>
+                        <option value="84">84 anos</option>
+                        <option value="85">85 anos</option>
+                        <option value="86">86 anos</option>
+                        <option value="87">87 anos</option>
+                        <option value="88">88 anos</option>
+                        <option value="89">89 anos</option>
+                        <option value="90">90 anos</option>
+                        <option value="91">91 anos</option>
+                        <option value="92">92 anos</option>
+                        <option value="93">93 anos</option>
+                        <option value="94">94 anos</option>
+                        <option value="95">95 anos</option>
+                        <option value="96">96 anos</option>
+                        <option value="97">97 anos</option>
+                        <option value="98">98 anos</option>
+                        <option value="99">99 anos</option>
+                        <option value="100">100 anos</option>
+                        </select>
+                        <select class="select-skin" name="Cor da pele" id="Cor da pele">
+                        <option value="1">Cor da pele</option>
+                        <option value="1">Pele Branca</option>
+                        <option value="1">Pele Morena</option>
+                        <option value="1">Pele Negra</option>
+                        </select>
+                        </form>
+                
+            </div>
+            <div>
+            <button class="button-filter">Filtrar</button>
+        </div>
+            </div>
+    </div>
+    </home>
+
+    <main>
+        <div class="box-missing-person-text">
+        <div class="title-filter">
+            <p>Mostrando pessoas com base em seus filtros:</p>
+        </div>
+        <div>
+            <div class="box-missing">
+            <div class="person-missing">  
+                <div class="person1">
+                        <div class="item1">
+                            <img class = "slide1-img"src="img\1_missing.jpg" alt="Pessoa1">
+                            <p class="person1-person-name">Fulano da Silva</p>
+                        </div>
+                </div> 
+                <div class="person2">             
+                        <div class="item2">
+                            <img class = "slide2-img"src="img\2_missing.jpg" alt="Pessoa2">
+                            <p class="person2-person-name" >Fulano da Silva</p>
+                        </div>
+                </div>
+                <div class= "person3">
+                        <div class="item3">
+                            <img class = "person3-img" src="img\3_missing.jpg" alt="Pessoa3">
+                            <p class="person3-person-name" >Fulano da Silva</p>
+                        </div>
+                </div>
+                <div class= "person4">
+                    <div class="item4">
+                        <img class = "person4-img" src="img\3_missing.jpg" alt="Pessoa4">
+                        <p class="person4-person-name" >Fulano da Silva</p>
+                    </div>
+                </div>
+                    <div class= "person5">
+                        <div class="item5">
+                            <img class = "person5-img" src="img\3_missing.jpg" alt="Pessoa5">
+                            <p class="person5-person-name" >Fulano da Silva</p>
+                        </div>
+                    </div>
+                    <div class="person6">
+                        <div class="item6">
+                            <img class = "slide1-img"src="img\1_missing.jpg" alt="Pessoa6">
+                            <p class="slide1-person-name">Fulano da Silva</p>
+                        </div>
+                </div> 
+                <div class="person7">             
+                        <div class="item7">
+                            <img class = "slide2-img"src="img\2_missing.jpg" alt="Pessoa7">
+                            <p class="slide2-person-name" >Fulano da Silva</p>
+                        </div>
+                </div>
+                <div class= "person8">
+                        <div class="item8">
+                            <img class = "person3-img" src="img\3_missing.jpg" alt="Pessoa8">
+                            <p class="person3-person-name" >Fulano da Silva</p>
+                        </div>
+                </div>
+                <div class= "person9">
+                    <div class="item9">
+                        <img class = "person4-img" src="img\3_missing.jpg" alt="Pessoa9">
+                        <p class="person4-person-name" >Fulano da Silva</p>
+                    </div>
+                </div>
+                    <div class= "person10">
+                        <div class="item10">
+                            <img class = "person5-img" src="img\3_missing.jpg" alt="Pessoa10">
+                            <p class="person5-person-name" >Fulano da Silva</p>
+                        </div>
+                    </div>
+            
+        </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+</body>
+</html>
