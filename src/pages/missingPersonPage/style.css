@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300;600&family=Roboto:wght@300;400;500;700&display=swap');
 
 .container{
-    padding: 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .web-header {
@@ -25,38 +26,39 @@ header div div{
     color: #023859;
 }
 
-.help-find{
-    background-color: rgba(204,16,41,0.1);
-    color: #023859;
-    border-radius: 10px 10px 0px 0px;
+.help{
     display: inline-flex;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    
+    gap: 10px;
 }
 
-.help-find a{
-    display: inline-flex;
+.helping-find h3{
+    margin: 0;
+    display: flex;
+    background-color: rgba(204,16,41,0.1);
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 700;
+    height: 40px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.help div a{
     text-decoration: none;
     color: #023859;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-}
-
-.help-find h3{
-    padding: 6px 3px 0 5px;
-    height: 40px;
-    width: 250px;
+    height: 0;
 }
 
 .login-button{
     background-color: #023859;
     color: #FFFFFF;
     border-radius: 10px;
-    width: 70px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     border:none;
-    margin: 10px 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -74,27 +76,65 @@ header div div{
     display: inline-flex;
 }
 
-nav{
+.back{
     padding-top: 50px;
 }
-/* INFORMAÇÕES DO DESAPARECIDO */
 
-aside{
-    display: inline-flex;
+.back a{
+    text-decoration: none;
+}
+/* INFORMAÇÕES DO DESAPARECIDO */
+.box{
+    border-top: 2px solid rgba(39, 39, 39, 0.185);
+    border-left: 2px solid rgba(39, 39, 39, 0.185);
+    border-bottom: 4px solid rgba(39, 39, 39, 0.300);
+    border-right: 4px solid rgba(39, 39, 39, 0.300);
+    padding: 10px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.box{
-    border: rgba(0,0,0,0.9);
+.primary-infos{
+    display: flex;
+}
+
+.info{
+    padding-left: 20px;
+}
+.info div{
+    display: flex;
+    height: 35px;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.secundary-infos{
+    width: 80%;
+}
+
+.secundary-infos nav{
+    display: flex;
+    padding: 10px 0 0 0;
+    height: 35px;
+    gap: 1px;
+    font-size: 18px;
+}
+
+div .missing-person-name, div .missing-since{
+    margin-left: 30%;
 }
 
 .missing-person-name{
     background-color: #023859;
     color: #FFFFFF;
-    width: 25%;
+    width: 230px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
 }
 
@@ -113,30 +153,29 @@ h1{
     height: 229.34px;
 }
 
-
-
 h4{
     color:#000000;
     font-family: 'Inter', sans-serif;
-    font-weight: 200;;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
+    font-weight: 200;
+    margin: 0;
 }
 
 #infoAnswer{
     color:#CC1029;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 /* CONFIGURAÇÃO DO ASIDE*/
 
-.red{
+.right{
     background-color: #023859;
     border-top: 5px solid #CC1029;
+    padding: 10px;
+    width: 20%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
 }
 
 h2{
@@ -147,6 +186,11 @@ h2{
 }
 
 .fale-conosco{
+    margin-top: 20%;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
     border: none;
     cursor: pointer;
     transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
@@ -155,6 +199,9 @@ h2{
 }
 
 .fale-conosco a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     text-decoration: none;
     color: #023859;
     font-family: 'Poppins', sans-serif;
@@ -164,11 +211,13 @@ h2{
 
 /* CONFIGURAÇÃO DO MAPA */
 
-.map{
-    margin-top: 30px;
-    background-color: #023859;
+div .map{
+    margin: 40px 0 0 0;
+    width: 98%;
+    border: 4px solid #023859;
 }
 
-iframe{
-    margin: 10px;
+.map iframe{
+    width: 100%;
+    height: 400px;
 }
